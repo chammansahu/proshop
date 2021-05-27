@@ -18,7 +18,9 @@ const ProductScreen = ({ match }) => {
     }, [match]);
   return (
     <>
-      <Link to='/' className="btn btn-dark my-3 ">Go Back</Link>
+      <Link to="/" className="btn btn-dark my-3 ">
+        Go Back
+      </Link>
       <Row>
         <Col md={6}>
           <Image src={product.image} alt={product.name} fluid />
@@ -55,15 +57,19 @@ const ProductScreen = ({ match }) => {
 
               <tr>
                 <th>Quantity</th>
-                              <td><select>
-                                  {[...Array(10).keys()].map((v)=>(
-                                      <option value={v+1} >{v+1}</option>
-                                   ))}
-                        </select></td>
-                          </tr>
-                          <tr>
-                              <Button>Add to Cart</Button>
-                          </tr>
+                <td>
+                  <select>
+                    {[...Array(10).keys()].map((v) => (
+                      <option value={v + 1}>{v + 1}</option>
+                    ))}
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <Button size="sm" variant="outline-dark">
+                  Add to Cart
+                </Button>
+              </tr>
             </table>
           </ListGroup>
         </Col>
