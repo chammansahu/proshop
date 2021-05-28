@@ -1,15 +1,8 @@
 
-import {
-  
-} from "./index";
+import { listProducts } from "./productActions";
 
 
 const actions = {
-  getPizzas,
-  addToCart,
-  addTodo,
-  setVisibilityFilter,
-  toggleTodo,
-  VisibilityFilters,
+ listProducts
 };
 export default actions;
