@@ -7,16 +7,16 @@ const Header = () => {
   return (
     <header className="mb-4">
       <Navbar bg="dark" variant="dark" expand="lg">
-        <LinkContainer to="/proshop">
+        <LinkContainer to="/">
           <Navbar.Brand>Proshop</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <LinkContainer to="/proshop/cart">
+            <LinkContainer to="/cart">
               <Nav.Link>cart</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/proshop/login">
+            <LinkContainer to="/login">
               <Nav.Link>sign in</Nav.Link>
             </LinkContainer>
           </Nav>

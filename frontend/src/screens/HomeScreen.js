@@ -11,7 +11,10 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 
 const HomeScreen = () => {
+
+  
   const dispatch = useDispatch()
+  
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList
   useEffect(() => {
@@ -26,8 +29,8 @@ const HomeScreen = () => {
       : (
       <Row>
         {products.map((product) => (
-          <Col sm={12} md={6} lg={3} xl={4}>
-            <Product product={product} />
+          <Col sm={12} md={6} lg={4} xl={3}>
+            <Product product={product}  />
           </Col>
         ))}
       </Row>

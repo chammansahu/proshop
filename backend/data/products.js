@@ -59,7 +59,7 @@ const products = [
     rating: 0,
     numReviews: 0,
   },
-  {
+  { 
     name: 'Amazon Echo Dot 3rd Generation',
     image: '/images/alexa.jpg',
     description:
