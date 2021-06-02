@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-
+import bcrypt from 'bcryptjs'
 const reviewSchema = mongoose.Schema(
   {
     name: { type: String, required: true },
